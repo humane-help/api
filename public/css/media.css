@@ -1,0 +1,217 @@
+.menu-open {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .slick-next {
+        right: 40px !important;
+        z-index: 9;
+    }
+    .slick-prev {
+        left: 40px !important;
+        z-index: 9;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner video {
+        width: auto;
+        height: 100%;
+    }
+
+    .footer__block {
+        padding-left: 0;
+    }
+
+    .pride__box {
+        padding: 16px;
+    }
+
+    .pride__block {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav__navbar {
+        height: 100vh;
+        width: 70%;
+        background-color: #0D153D;
+        position: fixed; left: -100%; top: 0;
+        z-index: 99;
+        padding: 20px;
+        flex-direction: column;
+        transition: all.2s ease;
+    }
+
+    .nav__navbar li {
+        margin-bottom: 20px;
+    }
+
+    .nav__navbar li a {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .nav__navbar.active {
+        left: 0;
+    }
+
+    .menu-open {
+        display: block;
+    }
+    .menu-open span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .menu-open span::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute; bottom: -10px; left: 0;
+        transition: all.2s ease;
+    }
+
+    .menu-open span::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute; top: -10px; left: 0;
+        transition: all.2s ease;
+    }
+
+    .menu-open span.active {
+        background-color: transparent;
+    }
+
+    .menu-open span.active::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+    .menu-open span.active::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .nav__box {
+        justify-content: space-between;
+    }
+
+    .projects-box,.projects-tech-right {
+        width: 100% !important;
+    }
+
+    .footer__box {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer__block {
+        width: 45%;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .pride__block {
+        flex-wrap: wrap;
+        margin: 24px 0;
+    }
+
+    .pride__card {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .reviews__top .main-btn {
+        display: none;
+    }
+
+    .reviews__top h2 {
+        padding: 0;
+    }
+
+    .reviews__text {
+        padding: 24px 0;
+    }
+
+    .reviews-track img {
+        width: 100%;
+    }
+
+    .reviews .slick-dots {
+        bottom: -30px;
+    }
+
+    .news h2 {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .news-track {
+        flex-wrap: wrap;
+    }
+
+    .news-track img {
+        width: 30%;
+    }
+
+    .benefits__box h2 {
+        padding-left: 0;
+        margin-bottom: 150px;
+    }
+
+    .benefits__block {
+        flex-direction: column;
+    }
+
+    .benefits__block .img {
+        margin-bottom: 24px;
+    }
+
+    .projects-box {
+        padding: 8px;
+    }
+    
+    .solutions h2 {
+        font-size: 24px;
+    }
+
+    .solutions__block {
+        width: 100%;
+        padding: 16px;
+        padding-bottom: 50px;
+        margin-top: 16px;
+    }
+
+    .banner__box h1 {
+        font-size: 24px;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .footer {
+        padding-bottom: 16px;
+    }
+
+    .footer__block {
+        width: 100%;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+}
